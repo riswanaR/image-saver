@@ -1,0 +1,62 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+  }
+  
+  .image-list {
+    list-style: none;
+    padding: 0;
+    padding: 10px; 
+  }
+  
+  .saved-image {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .remove-button {
+    padding: 5px 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%; /* Adjust width for smaller screens */
+    }
+  
+    .image-list {
+      display: flex;
+      flex-wrap: wrap; /* Wrap images on smaller screens */
+      justify-content: space-between; /* Space images evenly */
+    }
+  
+    .saved-image {
+      max-width: 150px; 
+    }
+  }.saved-image:hover {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .remove-button:hover {
+    background-color: #c00; 
+  }
+  
+  .remove-button:active {
+    transform: scale(0.95); 
+  }
+  h2 {
+    margin-bottom: 10px; 
+  }
+  
+  .remove-button {
+    color: #fff; 
+  }

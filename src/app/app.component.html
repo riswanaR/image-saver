@@ -1,0 +1,14 @@
+<div class="container">
+  <input type="file" (change)="onFileSelected($event)">
+  <button (click)="saveData()">Save Image</button>
+
+  <div *ngIf="savedImages.length > 0">
+    <h2>Saved Images:</h2>
+    <ul class="image-list">
+      <li *ngFor="let image of savedImages">
+        <img class="saved-image" [src]="image.url" alt="Saved Image">
+        <button class="remove-button" (click)="removeImage(image.id)">Remove</button>
+      </li>
+    </ul>
+  </div>
+</div>
